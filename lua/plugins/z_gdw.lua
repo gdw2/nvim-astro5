@@ -101,6 +101,7 @@ return {
   {
     "AstroNvim/astrocore",
     opts = function(_, opts)
+      opts.options.opt.guifont = "FiraCode Nerd Font:h14"
       local maps = opts.mappings
       local astro = require "astrocore"
       maps.n["<Leader>tc"] = { "<cmd>ToggleTermSendCurrentLine<cr>", desc = "Send Current Line" }
